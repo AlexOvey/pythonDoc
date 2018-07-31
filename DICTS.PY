@@ -111,5 +111,6 @@ if 'name' in id_dict:
 else:
 	print()
 
+#	converting from list to dictionary.
 list9 = ['1','2','3','4','5','6']
 print(dict(enumerate([list9])))

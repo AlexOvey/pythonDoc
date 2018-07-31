@@ -62,10 +62,10 @@ def main():
 if __name =="__main__":
 	main()
 		self.arg = arg
-"""
-# 	pass
+
+ 	pass
 print([" "][""])
-# f = open("hello.py")
+f = open("hello.py")
 for i in range(10):
 f.write("This is line "+ str(i)+"\r\n")
 f.close()
