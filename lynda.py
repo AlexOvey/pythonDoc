@@ -17,54 +17,55 @@ def handle_starttag(self, tag):
 
 
 
-# 		c = myClass
-# # import urllib.request
+c = myClass
+import urllib.request
 
-# # def main():
-# # 	webUrl = urllib.request.urlopen("http://www.google.com")
-# # 	print("result code: " + str(webUrl.getcode()))
-# # 	data = webUrl.read
+def main():
+	webUrl = urllib.request.urlopen("http://www.google.com")
+	print("result code: " + str(webUrl.getcode()))
+	data = webUrl.read
 
-# # 	if __name__== "__main__":
-# # 		main()
-# class myClass():
-# 	def method1(self):
-# 		print("myClass method1")
+	if __name__== "__main__":
+		main()
 
-# 	def method2(self, someString):
-# 		print("myClass method2" + someString)
+class myClass():
+	def method1(self):
+		print("myClass method1")
 
-# 	def main():
+	def method2(self, someString):
+		print("myClass method2" + someString)
+
+	def main():
 
 
-# 	if __name__ =="__main__":
-# 		main()
-# 	"""docstring for myClass"f __init__(self, arg):
-# 	def method1(self):
-# 		print("myClass method1")
+	if __name__ =="__main__":
+		main()
+	"""docstring for myClass"f __init__(self, arg):
+	def method1(self):
+		print("myClass method1")
 
-# 	def method2(self, someString):
-# 		print("myClass method2" + someString)
+	def method2(self, someString):
+		print("myClass method2" + someString)
 
-# 	def main():
-# 		c = myClass
-# 	if __name =="__main__":
-# 		main()
-# 		super(myClass,.__init__()
-# 		def method1(self):
-# 			print("myClass method1")
+	def main():
+		c = myClass
+	if __name =="__main__":
+		main()
+		super(myClass,.__init__()
+		def method1(self):
+			print("myClass method1")"""
 
-# def method2(sel, someStringf)
-# print("myClass method2" + someString)
-# def main():
-# 	c = myClass
-# if __name =="__main__":
-# 	main()
-# 		self.arg = arg
-# """
-# # 	pass
-# # print([" "][""])
-# # # f = open("hello.py")
-# # for i in range(10):
-# # f.write("This is line "+ str(i)+"\r\n")
-# # f.close()
+def method2(sel, someStringf)
+print("myClass method2" + someString)
+def main():
+	c = myClass
+if __name =="__main__":
+	main()
+		self.arg = arg
+"""
+# 	pass
+print([" "][""])
+# f = open("hello.py")
+for i in range(10):
+f.write("This is line "+ str(i)+"\r\n")
+f.close()

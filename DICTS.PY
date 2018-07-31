@@ -94,9 +94,22 @@
 # TypeError: list objects are unhashable
 
 id_dict = {'name': 'alex','nationel':'Nigerian','hairColor':'black','age':19,'sex':'male'}
-print(id_dict)
+print(str(id_dict)) #converting dict to string
+id_dict.clear()
+id_dict.copy 
+# print(id_dict)
+# print(id_dict.keys())
+# print(id_dict.values())
 
 id_dict['name'] = 'Paul' #edit
 print(id_dict)
 for i in id_dict:
-	print (f'{i}:	{id_dict[i]}')
+	print (f'{i.upper()} : {id_dict[i]}')
+
+if 'name' in id_dict:
+	print(id_dict.values())
+else:
+	print()
+
+list9 = ['1','2','3','4','5','6']
+print(dict(enumerate([list9])))
