@@ -1,10 +1,9 @@
-# '''In Dictionary each key is separated from its value by a colon (:), the items are separated by commas, and the whole thing is enclosed in curly braces. An empty dictionary without any items is written with just two curly braces, like this: {}.
+# In Dictionary each key is separated from its value by a colon (:), the items are separated by commas, and the whole thing is enclosed in curly braces. An empty dictionary without any items is written with just two curly braces, like this: {}.
 
 # Keys are unique within a dictionary while values may not be. The values of a dictionary can be of any type, but the keys must be of an immutable data type such as strings, numbers, or tuples.
 
 # Accessing Values in Dictionary
 # To access dictionary elements, you can use the familiar square brackets along with the key to obtain its value. Following is a simple example −
-# '''
 
 # #!/usr/bin/python
 
@@ -91,26 +90,93 @@
 # Traceback (most recent call last):
 #    File "test.py", line 3, in <module>
 #       dict = {['Name']: 'Zara', 'Age': 7};
+
 # TypeError: list objects are unhashable
 
-id_dict = {'name': 'alex','nationel':'Nigerian','hairColor':'black','age':19,'sex':'male'}
-print(str(id_dict)) #converting dict to string
-id_dict.clear()
-id_dict.copy 
-# print(id_dict)
-# print(id_dict.keys())
-# print(id_dict.values())
+# Built-in Dictionary Functions & Methods
+# Python includes the following dictionary functions −
 
-id_dict['name'] = 'Paul' #edit
-print(id_dict)
-for i in id_dict:
-	print (f'{i.upper()} : {id_dict[i]}')
+# Sr.No.	Function with Description
+# 1	cmp(dict1, dict2)
+# Compares elements of both dict.
 
-if 'name' in id_dict:
-	print(id_dict.values())
-else:
-	print()
+# 2	len(dict)
+# Gives the total length of the dictionary. This would be equal to the number of items in the dictionary.
 
-#	converting from list to dictionary.
-list9 = ['1','2','3','4','5','6']
-print(dict(enumerate([list9])))
+# 3	str(dict)
+# Produces a printable string representation of a dictionary
+
+# 4	type(variable)
+# Returns the type of the passed variable. If passed variable is dictionary, then it would return a dictionary type.
+
+# Python includes following dictionary methods −
+
+# Sr.No.	Methods with Description
+# 1	dict.clear()
+# Removes all elements of dictionary dict
+
+# 2	dict.copy()
+# Returns a shallow copy of dictionary dict
+
+# 3	dict.fromkeys()
+# Create a new dictionary with keys from seq and values set to value.
+
+# 4	dict.get(key, default=None)
+# For key key, returns value or default if key not in dictionary
+
+# 5	dict.has_key(key)
+# Returns true if key in dictionary dict, false otherwise
+
+# 6	dict.items()
+# Returns a list of dict's (key, value) tuple pairs
+
+# 7	dict.keys()
+# Returns list of dictionary dict's keys
+
+# 8	dict.setdefault(key, default=None)
+# Similar to get(), but will set dict[key]=default if key is not already in dict
+
+# 9	dict.update(dict2)
+# Adds dictionary dict2's key-values pairs to dict
+
+# 10	dict.values()
+# Returns list of dictionary dict's values
+
+
+
+
+
+dict1 = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
+dict1['Age'] = 8 # updating values
+dict1['School'] = "Univelsity" # adding key, value pair
+print(dict1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
