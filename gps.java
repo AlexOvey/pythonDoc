@@ -86,15 +86,15 @@ KivyGps = autoclass('org.renpy.android.KivyGps')
 currentActivity = cast('android.app.Activity', PythonActivity.mActivity)
 lm = currentActivity.getSystemService( Context.LOCATION_SERVICE)
 if lm.isProviderEnabled( LocationManager.GPS_PROVIDER ):
-    print 'CON GPS'
+    print ('CON GPS')
 
 else:
-    print 'SIN GPS'
+    print ('SIN GPS')
 
 
 lps = lm.getAllProviders()
 for lp in lps.toArray():
-    print lp
+    print (lp)
 #Arreglar problema de derechos ACCESS_FINE_LOCATION en Kivy Launcher
 lp = lm.getProvider('gps')
 

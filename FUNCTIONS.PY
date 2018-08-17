@@ -321,19 +321,19 @@
 # info = userInfo('alex', 16 , 'male','Nigeria')
 # print(info)
 
-def evenNunbers(num):
-	if num % 2 != 0:
-		return False
-		if num < 0 and num < 2:
-			print(f'Sorry {num} must be greater than 2'.format(num))
-			return False
-	else:
-		result= range(0, num+1, 2)
-		for i in result:
-			print(i)
-		return result
+# def evenNunbers(num):
+# 	if num % 2 != 0:
+# 		return False
+# 		if num < 0 and num < 2:
+# 			print(f'Sorry {num} must be greater than 2'.format(num))
+# 			return False
+# 	else:
+# 		result= range(0, num+1, 2)
+# 		for i in result:
+# 			print(i)
+# 		return result
 	
-evenNunbers(1)
+# evenNunbers(1)
 
 # def evenNumbers(number):
 # 	if number < 0:
@@ -350,6 +350,90 @@ evenNunbers(1)
 # 		for i in result:
 # 			print(i)
 # 		return result
-
 # numb = evenNumbers(33)
 # print(numb)
+#
+# def multipleOfFive(number):
+#
+#     if number % 5 == 0:
+#         print(True)
+#     else:
+#         print(False)
+#
+# print(multipleOfFive(24))
+
+# def greaterThanNumber(a,b):
+#     if a > b:
+#         return a
+#     else:
+#         return b
+
+# print(greaterThanNumber(6,8))
+
+# def greaterThan3(a,b,c):
+#     if c > greaterThanNumber(a,b):
+#         return c
+#     else:
+#         return greaterThanNumber(a,b)
+
+# print(greaterThan3(3, 7, 10))
+
+# def greaterThan4(a, b, c, d):
+#     if d > greaterThan3(a,b,c):
+#         return d
+#     else:
+#         return greaterThan3(a, b, c)
+
+# print(greaterThan4(4,5,7,4))
+
+# def greaterThan5(a, b, c, d, e):
+#     if f > greaterThan4(a, b, c, d):
+#         return 
+#     else:
+#         return greaterThan4
+
+def RegInformation( ):
+        
+    # check if details are supplied
+    name = input("Please enter name: ")
+    if name == ' ':
+        message = "Please enter your name: "
+        return message
+    elif len(name) < 2:
+        message = 'Name to short'
+        return message
+        
+    email = input("Please enter your email: ")
+    if email == ' ' or '@' not in email:
+        message = 'Please enter a valid email'
+        return message
+
+    password1 = input("Please enter password: ")
+    if len(password1) < 6:
+        message = 'password too short'
+        return message
+    for i in password1:
+        if i in name:
+            message = 'password should not contain any character in name'
+            return message
+            break
+        else:
+            continue
+
+    password2 = input("Please enter password: ")
+    if password1 != password2:
+        message = 'password mismatch'
+        print(message)
+        return message
+
+    gender = input('Please enter gender: ')
+    title = ['Mr ', 'Mrs']
+    if gender == 'male':
+        message = 'Welcome {} {}'.format(title[0], name)
+        print(message)
+    elif gender == 'female':
+        message = 'Welcome {} {}'.format(title[1], name)
+        print(message)
+    else:
+        return message
+print(RegInformation())

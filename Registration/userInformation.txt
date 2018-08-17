@@ -1,0 +1,11 @@
+
+alex, alex@gmail.com,123456,123456,Male
+derry, derry@gmail.com,123456,123456,Male
+james, james@gmail.com,james@,james@,Male
+Seun , Seun@gmail.com,654321,654321,Female
+Halima, halima@gmail.com,1234567,1234567,Female
+Emanuella, emanuela@yahoo.com,mathxc,mathxc,Female
+Joseph, josephagunbiade@budgit.com,emailex,emailex,Male
+Hafia, Hafoa@hotmail.com,music1234,music1234,Female
+Grace , grace@math.com,098765,098765,Female
+Ibrahim, ibrahim@gmail.com,098765,098765,Male
