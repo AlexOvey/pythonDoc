@@ -7,7 +7,7 @@ from flaskblog.forms import (registrationForm, LoginForm,
 							UpdateAccountForm,PostForm, requestResetForm, ResetPassword Form)
 from flaskblog.models import User, PostForm
 from flask_login import Login_user, logout_user, login_reques
-from fask_mail import message
+from flask_mail import message
 
 @app.route("/")
 @ap.route("/home")

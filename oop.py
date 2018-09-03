@@ -341,58 +341,53 @@
 # Example
 # #!/usr/bin/python
 
-# class Vector:
-#    def __init__(self, a, b):
-#       self.a = a
-#       self.b = b
+class Vector:
+   def __init__(self, a, b):
+      self.a = a
+      self.b = b
 
-#    def __str__(self):
-#       return 'Vector (%d, %d)' % (self.a, self.b)
+   def __str__(self):
+      return 'Vector (%d, %d)' % (self.a, self.b)
    
-#    def __add__(self,other):
-#       return Vector(self.a + other.a, self.b + other.b)
+   def __add__(self,other):
+      return Vector(self.a + other.a, self.b + other.b)
 
-# v1 = Vector(2,10)
-# v2 = Vector(5,-2)
-# print v1 + v2
-# When the above code is executed, it produces the following result −
+v1 = Vector(2,10)
+v2 = Vector(5,-2)
+print v1 + v2
+When the above code is executed, it produces the following result −
 
-# Vector(7,8)
-# Data Hiding
-# An object's attributes may or may not be visible outside the class definition. You need to name attributes with a double underscore prefix, and those attributes then are not be directly visible to outsiders.
+Vector(7,8)
+Data Hiding
+An object's attributes may or may not be visible outside the class definition. You need to name attributes with a double underscore prefix, and those attributes then are not be directly visible to outsiders.
 
-# Example
-# #!/usr/bin/python
+Example
+!/usr/bin/python
 
-# class JustCounter:
-#    __secretCount = 0
+class JustCounter:
+   __secretCount = 0
   
-#    def count(self):
-#       self.__secretCount += 1
-#       print self.__secretCount
+   def count(self):
+      self.__secretCount += 1
+      print self.__secretCount
 
-# counter = JustCounter()
-# counter.count()
-# counter.count()
-# print counter.__secretCount
-# When the above code is executed, it produces the following result −
+counter = JustCounter()
+counter.count()
+counter.count()
+print counter.__secretCount
+When the above code is executed, it produces the following result −
 
-# 1
-# 2
-# Traceback (most recent call last):
-#    File "test.py", line 12, in <module>
-#       print counter.__secretCount
-# AttributeError: JustCounter instance has no attribute '__secretCount'
-# Python protects those members by internally changing the name to include the class name. You can access such attributes as object._className__attrName. If you would replace your last line as following, then it works for you −
+1
+2
+Traceback (most recent call last):
+   File "test.py", line 12, in <module>
+      print counter.__secretCount
+AttributeError: JustCounter instance has no attribute '__secretCount'
+Python protects those members by internally changing the name to include the class name. You can access such attributes as object._className__attrName. If you would replace your last line as following, then it works for you −
 
-# .........................
-# print counter._JustCounter__secretCount
-# When the above code is executed, it produces the following result −
-
-# 1
-# 2
-# 2
-
+.........................
+print counter._JustCounter__secretCount
+When the above code is executed, it produces the following result −
 
 
 class Car:
@@ -405,35 +400,34 @@ class Car:
       self.NumOfTyres = NumOfTyres
       self.NumOfGears = NumOfGears
 
-      def canMove(self):
+      def canMove(self, NumOfTyres):
          if self.NumOfTyres > 3:
             print("Yeah can move")
-            return True
          else:
             print("Oops car can not move")
-            return False
+            return self.NumOfTyres
 
-      def canAutoReverse(self):
+      def canAutoReverse(self, year):
          if self.year > 2018:
             print("Yeah AutoReverse")
          else:
             print("Oops model to old. Can not autoReverse")
-         return False
+         return self.year
 
-      def autoLock(self):
+      def autoLock(self, year):
          if self.year > 2016:
             print("Car can auto lock")
-            return True
+            
          else:
             print('Oh no, car can not autolock')
-            return False
+            return self.year
 
-c=Car("Toyota","grey","2019 model", 2017, 4, 4, 6)
+carTest = Car("Toyota","grey","2019 model", 2017, 4, 4, 6)
 # print(carTest.canMove())
-print(c.name)
-print(c.color)
-print(c.model)
-print(c.numOfDoors)
-print(c.NumOfTyres)
-print(c.NumOfGears)
-print(c)
+print(carTest.name)
+print(carTest.color)
+print(carTest.model)
+print(carTest.numOfDoors)
+print(carTest.NumOfTyres)
+print(carTest.NumOfGears)
+print(carTest.NumOfGears)
