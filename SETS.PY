@@ -17,7 +17,7 @@ while True:
 		print(f'birthdays[name] + ' is the birthday of ' + name')
 	else:
 		print(' I do not have birthday information of ' + name)
-		print('What is their birthday?')
+		
 		bday = input()
 		
 

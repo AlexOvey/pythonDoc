@@ -36,12 +36,3 @@
 # else voter_age >=18:
 #         print("You are eligeable to vote, Buhari for 2019 {} ".format(voter_name))
 
-
-name = (input("Hi, what is your name:"))
-age = int(input("what is your age {} :".format(name)))
-if (age <= 18) and (60 >= age):
-    print("Have a nice day at work{}".format(name))
-elif 18 > age:
-	print("Hi {} you are too young to work".format(name))
-else:
-	print("Hi, {} please reitre".format(name))
